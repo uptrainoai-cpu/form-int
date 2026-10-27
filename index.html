@@ -20,25 +20,39 @@
         Planning a Premium Home Interior in Dehradun or Mussoorie?
       </h1>
       <p class="text-sm text-neutral-300 mt-2 leading-relaxed">
-        With 200+ homes designed, Space Manager brings thoughtful space planning, 3D interior design, and complete turnkey execution together within your budget. Tell us about your project and budget below so our senior design team can arrange a free consultation.
+        With 200+ projects designed, Space Manager brings thoughtful space planning, 3D interior design, and complete turnkey execution together within your budget. Tell us about your project and budget below so our senior design team can arrange a free consultation.
       </p>
       <ul class="mt-3 space-y-1 text-xs text-amber-300/90">
-        <li>✓ 200+ Premium Homes & Interior Projects Designed</li>
+        <li>✓ 200+ Premium Residential & Commercial Interiors Designed</li>
         <li>✓ End-to-End 2D/3D Layout, Color Theory & Turnkey Execution</li>
         <li>✓ Dedicated Interior Design Team Serving Dehradun & Mussoorie</li>
       </ul>
     </div>
 
     <!-- Semantic HTML Form for Meta Instant Form Generator -->
-    <form id="space-manager-lead-form" action="/thank-you" method="POST" class="space-y-5">
+    <form id="space-manager-interior-form" action="/thank-you" method="POST" class="space-y-5">
 
-      <!-- Question 1: Interior Design Service -->
+      <!-- Question 1: Property Type -->
+      <div>
+        <label for="property_type" class="block text-sm font-medium text-neutral-200 mb-1">
+          What type of property are you looking to design? *
+        </label>
+        <select id="property_type" name="property_type" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select property type</option>
+          <option value="Residential">Residential</option>
+          <option value="Commercial">Commercial</option>
+          <option value="Office">Office</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <!-- Question 2: Interior Design Service -->
       <div>
         <label for="interior_service" class="block text-sm font-medium text-neutral-200 mb-1">
           What type of interior design service are you looking for? *
         </label>
         <select id="interior_service" name="interior_service" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select your required service</option>
+          <option value="" disabled selected>Select interior design service</option>
           <option value="Full Home Interior Design">Full Home Interior Design</option>
           <option value="Modular Kitchen">Modular Kitchen</option>
           <option value="Bedroom & Living Room">Bedroom & Living Room</option>
@@ -47,63 +61,76 @@
         </select>
       </div>
 
-      <!-- Question 2: Property Stage -->
+      <!-- Question 3: Property Size -->
       <div>
-        <label for="property_stage" class="block text-sm font-medium text-neutral-200 mb-1">
-          What is the current stage of your property? *
+        <label for="property_size" class="block text-sm font-medium text-neutral-200 mb-1">
+          What is the size of your property? *
         </label>
-        <select id="property_stage" name="property_stage" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select property status</option>
-          <option value="Possession Received (Ready to Start Immediately)">Possession Received (Ready to Start Immediately)</option>
-          <option value="Possession Expected in 1 - 3 Months">Possession Expected in 1 - 3 Months</option>
-          <option value="Currently Under Construction (Planning Stage)">Currently Under Construction (Planning Stage)</option>
-          <option value="Just Exploring Ideas & Cost Estimates">Just Exploring Ideas & Cost Estimates</option>
+        <select id="property_size" name="property_size" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select property size</option>
+          <option value="Below 1,000 sq. ft.">Below 1,000 sq. ft.</option>
+          <option value="1,000–2,000 sq. ft.">1,000–2,000 sq. ft.</option>
+          <option value="2,000–3,000 sq. ft.">2,000–3,000 sq. ft.</option>
+          <option value="Above 3,000 sq. ft.">Above 3,000 sq. ft.</option>
+          <option value="Not Sure Yet">Not Sure Yet</option>
         </select>
       </div>
 
-      <!-- Question 3: Project Budget -->
+      <!-- Question 4: Estimated Budget -->
       <div>
         <label for="estimated_budget" class="block text-sm font-medium text-neutral-200 mb-1">
-          What is your estimated budget for this interior project? *
+          What is your estimated budget for the interior project? *
         </label>
         <select id="estimated_budget" name="estimated_budget" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select your estimated budget</option>
-          <option value="₹6 Lakhs – ₹10 Lakhs">₹6 Lakhs – ₹10 Lakhs</option>
-          <option value="₹10 Lakhs – ₹20 Lakhs">₹10 Lakhs – ₹20 Lakhs</option>
-          <option value="₹20 Lakhs – ₹35 Lakhs">₹20 Lakhs – ₹35 Lakhs</option>
-          <option value="₹35 Lakhs+ (Premium Luxury Turnkey)">₹35 Lakhs+ (Premium Luxury Turnkey)</option>
+          <option value="" disabled selected>Select estimated budget</option>
+          <option value="Below ₹5 Lakhs">Below ₹5 Lakhs</option>
+          <option value="₹5–10 Lakhs">₹5–10 Lakhs</option>
+          <option value="₹10–20 Lakhs">₹10–20 Lakhs</option>
+          <option value="₹20–30 Lakhs">₹20–30 Lakhs</option>
+          <option value="Above ₹30 Lakhs">Above ₹30 Lakhs</option>
+          <option value="Not Decided Yet">Not Decided Yet</option>
         </select>
       </div>
 
-      <!-- Question 4: Property Location & Size -->
+      <!-- Question 5: Project Timeline -->
       <div>
-        <label for="property_location_and_size" class="block text-sm font-medium text-neutral-200 mb-1">
-          Where is your property located in Dehradun/Mussoorie and what is the size (BHK / Sq.ft)? *
+        <label for="project_timeline" class="block text-sm font-medium text-neutral-200 mb-1">
+          When are you planning to start your interior project? *
         </label>
-        <input type="text" id="property_location_and_size" name="property_location_and_size" required placeholder="E.g., 3BHK on Rajpur Road, or Villa in Jakhan (2400 sq.ft)" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+        <select id="project_timeline" name="project_timeline" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select project start timeline</option>
+          <option value="Immediately">Immediately</option>
+          <option value="Within 1 Month">Within 1 Month</option>
+          <option value="Within 3 Months">Within 3 Months</option>
+          <option value="Within 6 Months">Within 6 Months</option>
+          <option value="Just Exploring">Just Exploring</option>
+        </select>
+      </div>
+
+      <!-- Question 6: Property City (Short Answer) -->
+      <div>
+        <label for="property_city" class="block text-sm font-medium text-neutral-200 mb-1">
+          Which city is your property located in? *
+        </label>
+        <input type="text" id="property_city" name="property_city" required placeholder="Enter City Name (e.g., Dehradun / Mussoorie)" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
       </div>
 
       <hr class="border-neutral-800 my-4">
 
-      <!-- Contact Information -->
+      <!-- Contact Information (Meta Prefilled Fields) -->
       <div>
         <label for="full_name" class="block text-sm font-medium text-neutral-200 mb-1">Full Name *</label>
         <input type="text" id="full_name" name="full_name" autocomplete="name" required placeholder="Enter your full name" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white">
       </div>
 
       <div>
-        <label for="phone_number" class="block text-sm font-medium text-neutral-200 mb-1">WhatsApp / Phone Number *</label>
+        <label for="phone_number" class="block text-sm font-medium text-neutral-200 mb-1">Phone Number *</label>
         <input type="tel" id="phone_number" name="phone_number" autocomplete="tel" required placeholder="+91 98765 43210" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white">
       </div>
 
       <div>
-        <label for="email" class="block text-sm font-medium text-neutral-200 mb-1">Email Address</label>
-        <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white">
-      </div>
-
-      <div>
-        <label for="city" class="block text-sm font-medium text-neutral-200 mb-1">City / Area *</label>
-        <input type="text" id="city" name="city" autocomplete="address-level2" required placeholder="Dehradun / Mussoorie" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white">
+        <label for="email" class="block text-sm font-medium text-neutral-200 mb-1">Email Address *</label>
+        <input type="email" id="email" name="email" autocomplete="email" required placeholder="you@example.com" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white">
       </div>
 
       <button type="submit" class="w-full bg-amber-500 hover:bg-amber-400 text-neutral-950 font-bold py-3.5 px-6 rounded-lg transition duration-200 shadow-lg">
