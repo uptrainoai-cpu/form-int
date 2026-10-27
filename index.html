@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Space Manager | Book Free Interior Design Consultation</title>
-  <meta name="description" content="Space Manager brings interior design, thoughtful space planning and turnkey execution together for homeowners in Dehradun and Mussoorie.">
+  <title>Space Manager | Book Free Architecture & Construction Consultation</title>
+  <meta name="description" content="Space Manager brings architectural planning, structural design and complete turnkey construction together for homeowners in Dehradun, Mussoorie and Rishikesh.">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-neutral-950 text-neutral-100 min-h-screen flex items-center justify-center p-4 font-sans">
@@ -14,105 +14,110 @@
     <!-- Form Intro Header for Meta AI Scraper -->
     <div class="mb-6 border-b border-neutral-800 pb-5">
       <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">
-        Space Manager • Interiors | Turnkey
+        Space Manager • Architecture | Construction | Turnkey
       </span>
       <h1 class="text-2xl font-bold text-white mt-2">
-        Planning a Premium Home Interior in Dehradun or Mussoorie?
+        Planning to Build Your Dream Home in Dehradun, Mussoorie or Rishikesh?
       </h1>
       <p class="text-sm text-neutral-300 mt-2 leading-relaxed">
-        With 200+ projects designed, Space Manager brings thoughtful space planning, 3D interior design, and complete turnkey execution together within your budget. Tell us about your project and budget below so our senior design team can arrange a free consultation.
+        With 7+ years of experience and 200+ homes built, Space Manager brings architectural planning, structural design, and complete turnkey construction together within your budget. Share your project details below to book your free consultation.
       </p>
       <ul class="mt-3 space-y-1 text-xs text-amber-300/90">
-        <li>✓ 200+ Premium Residential & Commercial Interiors Designed</li>
-        <li>✓ End-to-End 2D/3D Layout, Color Theory & Turnkey Execution</li>
-        <li>✓ Dedicated Interior Design Team Serving Dehradun & Mussoorie</li>
+        <li>✓ 7+ Years Experience & 200+ Homes Successfully Delivered</li>
+        <li>✓ End-to-End Architectural Planning & Turnkey Execution</li>
+        <li>✓ Zero Compromise in Planning, Material & Execution</li>
       </ul>
     </div>
 
     <!-- Semantic HTML Form for Meta Instant Form Generator -->
-    <form id="space-manager-interior-form" action="/thank-you" method="POST" class="space-y-5">
+    <form id="space-manager-construction-form" action="/thank-you" method="POST" class="space-y-5">
 
-      <!-- Question 1: Property Type -->
+      <!-- Question 1: Architectural or Construction Service -->
       <div>
-        <label for="property_type" class="block text-sm font-medium text-neutral-200 mb-1">
-          What type of property are you looking to design? *
+        <label for="construction_service" class="block text-sm font-medium text-neutral-200 mb-1">
+          What type of architectural or construction service are you looking for? *
         </label>
-        <select id="property_type" name="property_type" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select property type</option>
-          <option value="Residential">Residential</option>
-          <option value="Commercial">Commercial</option>
-          <option value="Office">Office</option>
+        <select id="construction_service" name="construction_service" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select required service</option>
+          <option value="Architectural Planning & Design">Architectural Planning & Design</option>
+          <option value="Complete House Construction">Complete House Construction</option>
+          <option value="Architectural Design + Turnkey Execution">Architectural Design + Turnkey Execution</option>
+          <option value="Commercial Building Design & Construction">Commercial Building Design & Construction</option>
+          <option value="Renovation / Extension of Existing Property">Renovation / Extension of Existing Property</option>
+        </select>
+      </div>
+
+      <!-- Question 2: Project Type -->
+      <div>
+        <label for="project_type" class="block text-sm font-medium text-neutral-200 mb-1">
+          What type of project are you planning? *
+        </label>
+        <select id="project_type" name="project_type" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select project type</option>
+          <option value="Independent House / Villa">Independent House / Villa</option>
+          <option value="Residential Building / Apartments">Residential Building / Apartments</option>
+          <option value="Commercial Building">Commercial Building</option>
+          <option value="Office / Showroom / Clinic">Office / Showroom / Clinic</option>
           <option value="Other">Other</option>
         </select>
       </div>
 
-      <!-- Question 2: Interior Design Service -->
+      <!-- Question 3: Plot / Property Ownership -->
       <div>
-        <label for="interior_service" class="block text-sm font-medium text-neutral-200 mb-1">
-          What type of interior design service are you looking for? *
+        <label for="plot_ownership" class="block text-sm font-medium text-neutral-200 mb-1">
+          Do you already own a plot or property? *
         </label>
-        <select id="interior_service" name="interior_service" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select interior design service</option>
-          <option value="Full Home Interior Design">Full Home Interior Design</option>
-          <option value="Modular Kitchen">Modular Kitchen</option>
-          <option value="Bedroom & Living Room">Bedroom & Living Room</option>
-          <option value="Office Interior">Office Interior</option>
-          <option value="Complete Commercial Interior">Complete Commercial Interior</option>
+        <select id="plot_ownership" name="plot_ownership" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select ownership status</option>
+          <option value="Yes, I own a plot">Yes, I own a plot</option>
+          <option value="Yes, I own an existing property">Yes, I own an existing property</option>
+          <option value="No, I am planning to purchase one">No, I am planning to purchase one</option>
+          <option value="Still exploring options">Still exploring options</option>
         </select>
       </div>
 
-      <!-- Question 3: Property Size -->
+      <!-- Question 4: Approximate Plot or Construction Area -->
       <div>
-        <label for="property_size" class="block text-sm font-medium text-neutral-200 mb-1">
-          What is the size of your property? *
+        <label for="plot_area" class="block text-sm font-medium text-neutral-200 mb-1">
+          What is the approximate plot or construction area? *
         </label>
-        <select id="property_size" name="property_size" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select property size</option>
-          <option value="Below 1,000 sq. ft.">Below 1,000 sq. ft.</option>
-          <option value="1,000–2,000 sq. ft.">1,000–2,000 sq. ft.</option>
-          <option value="2,000–3,000 sq. ft.">2,000–3,000 sq. ft.</option>
-          <option value="Above 3,000 sq. ft.">Above 3,000 sq. ft.</option>
-          <option value="Not Sure Yet">Not Sure Yet</option>
+        <select id="plot_area" name="plot_area" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select plot or construction area</option>
+          <option value="Below 200 Guj/Sq yard">Below 200 Guj/Sq yard</option>
+          <option value="2,00-3,00 guj/ sq. yrd">2,00-3,00 guj/ sq. yrd</option>
+          <option value="400-600 Guj/Sq yard">400-600 Guj/Sq yard</option>
+          <option value="Above 600 Guj/ Sq Yard">Above 600 Guj/ Sq Yard</option>
+          <option value="Not finalised yet">Not finalised yet</option>
         </select>
       </div>
 
-      <!-- Question 4: Estimated Budget -->
-      <div>
-        <label for="estimated_budget" class="block text-sm font-medium text-neutral-200 mb-1">
-          What is your estimated budget for the interior project? *
-        </label>
-        <select id="estimated_budget" name="estimated_budget" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
-          <option value="" disabled selected>Select estimated budget</option>
-          <option value="Below ₹5 Lakhs">Below ₹5 Lakhs</option>
-          <option value="₹5–10 Lakhs">₹5–10 Lakhs</option>
-          <option value="₹10–20 Lakhs">₹10–20 Lakhs</option>
-          <option value="₹20–30 Lakhs">₹20–30 Lakhs</option>
-          <option value="Above ₹30 Lakhs">Above ₹30 Lakhs</option>
-          <option value="Not Decided Yet">Not Decided Yet</option>
-        </select>
-      </div>
-
-      <!-- Question 5: Project Timeline -->
+      <!-- Question 5: Project Start Timeline -->
       <div>
         <label for="project_timeline" class="block text-sm font-medium text-neutral-200 mb-1">
-          When are you planning to start your interior project? *
+          When are you planning to start your project? *
         </label>
         <select id="project_timeline" name="project_timeline" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
           <option value="" disabled selected>Select project start timeline</option>
           <option value="Immediately">Immediately</option>
-          <option value="Within 1 Month">Within 1 Month</option>
-          <option value="Within 3 Months">Within 3 Months</option>
-          <option value="Within 6 Months">Within 6 Months</option>
-          <option value="Just Exploring">Just Exploring</option>
+          <option value="Within 1 month">Within 1 month</option>
+          <option value="Within 1–3 months">Within 1–3 months</option>
+          <option value="Within 3–6 months">Within 3–6 months</option>
+          <option value="Just exploring options">Just exploring options</option>
         </select>
       </div>
 
-      <!-- Question 6: Property City (Short Answer) -->
+      <!-- Question 6: Project Location -->
       <div>
-        <label for="property_city" class="block text-sm font-medium text-neutral-200 mb-1">
-          Which city is your property located in? *
+        <label for="project_location" class="block text-sm font-medium text-neutral-200 mb-1">
+          Where is your project located? *
         </label>
-        <input type="text" id="property_city" name="property_city" required placeholder="Enter City Name (e.g., Dehradun / Mussoorie)" class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+        <select id="project_location" name="project_location" required class="w-full bg-neutral-800 border border-neutral-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-amber-500">
+          <option value="" disabled selected>Select project location</option>
+          <option value="Dehradun">Dehradun</option>
+          <option value="Mussoorie">Mussoorie</option>
+          <option value="Rishikesh">Rishikesh</option>
+          <option value="Other location">Other location</option>
+        </select>
       </div>
 
       <hr class="border-neutral-800 my-4">
@@ -138,7 +143,7 @@
       </button>
 
       <p class="text-xs text-neutral-400 text-center mt-2">
-        Privacy Policy: Your contact details are strictly confidential and will only be used by Space Manager's design team to discuss your interior project requirements.
+        Privacy Policy: Your contact details are strictly confidential and will only be used by Space Manager's architecture & construction team to discuss your project requirements.
       </p>
     </form>
 
